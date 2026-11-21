@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+out/
+experiment/results_mock/
+experiment/results/_done/
+*.tmp
+.venv/
+.pytest_cache/
+*.before_*

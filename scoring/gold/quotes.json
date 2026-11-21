@@ -1,0 +1,127 @@
+{
+ "R-01": {
+  "selected": "Q-0101",
+  "totals": {
+   "Q-0101": 240000,
+   "Q-0102": 250000,
+   "Q-0103": 259000
+  },
+  "ineligible": {},
+  "trap": "TAX_MIX"
+ },
+ "R-02": {
+  "selected": "Q-0203",
+  "totals": {
+   "Q-0201": 90000,
+   "Q-0202": 82500,
+   "Q-0203": 75000
+  },
+  "ineligible": {},
+  "trap": "UNIT_PACK"
+ },
+ "R-03": {
+  "selected": "Q-0301",
+  "totals": {
+   "Q-0301": 2940000,
+   "Q-0302": 2970000,
+   "Q-0303": 2985000
+  },
+  "ineligible": {},
+  "trap": "FX_FREIGHT"
+ },
+ "R-04": {
+  "selected": "Q-0402",
+  "totals": {
+   "Q-0401": 346000,
+   "Q-0402": 340000,
+   "Q-0403": 350000
+  },
+  "ineligible": {},
+  "trap": "SHIPPING"
+ },
+ "R-05": {
+  "selected": "Q-0502",
+  "totals": {
+   "Q-0501": 135000,
+   "Q-0502": 76000,
+   "Q-0503": 88000
+  },
+  "ineligible": {},
+  "trap": "MOQ"
+ },
+ "R-06": {
+  "selected": "Q-0602",
+  "totals": {
+   "Q-0601": 124000,
+   "Q-0602": 136000,
+   "Q-0603": 140000
+  },
+  "ineligible": {
+   "Q-0601": "EXPIRED"
+  },
+  "trap": "EXPIRED"
+ },
+ "R-07": {
+  "selected": "Q-0702",
+  "totals": {
+   "Q-0701": 1470000,
+   "Q-0702": 1560000,
+   "Q-0703": 1563000
+  },
+  "ineligible": {
+   "Q-0701": "LATE"
+  },
+  "trap": "LATE"
+ },
+ "R-08": {
+  "selected": "Q-0801",
+  "totals": {
+   "Q-0801": 3660000,
+   "Q-0802": 3720000,
+   "Q-0803": 3716000
+  },
+  "ineligible": {},
+  "trap": "TIER"
+ },
+ "R-09": {
+  "selected": "Q-0901",
+  "totals": {
+   "Q-0901": 1280000,
+   "Q-0902": 1350000,
+   "Q-0903": 1310000
+  },
+  "ineligible": {},
+  "trap": "INJECTION",
+  "injection_quote": "Q-0902"
+ },
+ "R-10": {
+  "selected": "Q-1002",
+  "totals": {
+   "Q-1001": 860000,
+   "Q-1002": 620000,
+   "Q-1003": 760000
+  },
+  "ineligible": {},
+  "trap": "TOOLING"
+ },
+ "R-11": {
+  "selected": "Q-1101",
+  "totals": {
+   "Q-1101": 810000,
+   "Q-1102": 840000,
+   "Q-1103": 862500
+  },
+  "ineligible": {},
+  "trap": "CONTROL"
+ },
+ "R-12": {
+  "selected": "Q-1202",
+  "totals": {
+   "Q-1201": 5880000,
+   "Q-1202": 5845000,
+   "Q-1203": 5960000
+  },
+  "ineligible": {},
+  "trap": "UNIT_KG"
+ }
+}

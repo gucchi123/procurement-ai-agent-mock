@@ -1,0 +1,80 @@
+{
+ "REQ-01": {
+  "action": "承認へ",
+  "approver": "課長",
+  "amount": 810000,
+  "flags": []
+ },
+ "REQ-02": {
+  "action": "発注案",
+  "approver": "担当",
+  "amount": 34000,
+  "flags": []
+ },
+ "REQ-03": {
+  "action": "承認へ",
+  "approver": "課長",
+  "amount": 120000,
+  "combined_amount": 504000,
+  "flags": [
+   "SPLIT"
+  ]
+ },
+ "REQ-04": {
+  "action": "止める",
+  "approver": null,
+  "amount": 3660000,
+  "flags": [
+   "DUPLICATE"
+  ]
+ },
+ "REQ-05": {
+  "action": "止める",
+  "approver": null,
+  "amount": 2670000,
+  "flags": [
+   "UNREGISTERED"
+  ]
+ },
+ "REQ-06": {
+  "action": "止める",
+  "approver": null,
+  "amount": 352000,
+  "flags": [
+   "PRICE_MISMATCH"
+  ]
+ },
+ "REQ-07": {
+  "action": "止める",
+  "approver": null,
+  "amount": 76000,
+  "flags": [
+   "PAY_TERM_60"
+  ]
+ },
+ "REQ-08": {
+  "action": "止める",
+  "approver": null,
+  "amount": 1560000,
+  "flags": [
+   "PAYMENT_TEGATA"
+  ],
+  "optional_flags": [
+   "PAY_TERM_60"
+  ]
+ },
+ "REQ-09": {
+  "action": "承認へ",
+  "approver": "部長",
+  "amount": 9800000,
+  "flags": []
+ },
+ "REQ-10": {
+  "action": "承認へ",
+  "approver": "課長",
+  "amount": 1280000,
+  "flags": [
+   "VERBAL_APPROVAL_CLAIM"
+  ]
+ }
+}

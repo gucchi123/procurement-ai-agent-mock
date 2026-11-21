@@ -1,0 +1,180 @@
+{
+ "suppliers": [
+  {
+   "code": "V-01",
+   "name": "オボロ鋼材",
+   "kind": "鋼材・鋳物の手配",
+   "region": "北関東",
+   "capital_man_yen": 9000,
+   "employees": 180,
+   "registered": true
+  },
+  {
+   "code": "V-02",
+   "name": "トオミ金属",
+   "kind": "鋼材",
+   "region": "東海",
+   "capital_man_yen": 5000,
+   "employees": 140,
+   "registered": true
+  },
+  {
+   "code": "V-03",
+   "name": "ヒイラギ素材",
+   "kind": "ゴム・樹脂部品",
+   "region": "北関東",
+   "capital_man_yen": 3000,
+   "employees": 95,
+   "registered": true
+  },
+  {
+   "code": "V-04",
+   "name": "ナズナ化成",
+   "kind": "樹脂成形",
+   "region": "近畿",
+   "capital_man_yen": 8000,
+   "employees": 210,
+   "registered": true
+  },
+  {
+   "code": "V-05",
+   "name": "ハルセ電子",
+   "kind": "モーター・制御基板",
+   "region": "東北",
+   "capital_man_yen": 20000,
+   "employees": 280,
+   "registered": true
+  },
+  {
+   "code": "V-06",
+   "name": "マドカ電線",
+   "kind": "配線ハーネス",
+   "region": "東海",
+   "capital_man_yen": 4000,
+   "employees": 120,
+   "registered": true
+  },
+  {
+   "code": "V-07",
+   "name": "コノハ電材",
+   "kind": "制御基板・ハーネス",
+   "region": "北陸",
+   "capital_man_yen": 6000,
+   "employees": 160,
+   "registered": true
+  },
+  {
+   "code": "V-08",
+   "name": "ノギク鋳造",
+   "kind": "鋳物",
+   "region": "北陸",
+   "capital_man_yen": 4500,
+   "employees": 130,
+   "registered": true
+  },
+  {
+   "code": "V-09",
+   "name": "ツユクサ精密",
+   "kind": "軸受・機械加工",
+   "region": "信越",
+   "capital_man_yen": 9500,
+   "employees": 230,
+   "registered": true
+  },
+  {
+   "code": "V-10",
+   "name": "セキレイ精機",
+   "kind": "機械部品の商社",
+   "region": "近畿",
+   "capital_man_yen": 35000,
+   "employees": 650,
+   "registered": true
+  },
+  {
+   "code": "V-11",
+   "name": "ミナモ梱包",
+   "kind": "梱包材",
+   "region": "首都圏",
+   "capital_man_yen": 2000,
+   "employees": 60,
+   "registered": true
+  },
+  {
+   "code": "V-12",
+   "name": "フタバネ物流",
+   "kind": "物流・梱包材",
+   "region": "首都圏",
+   "capital_man_yen": 10000,
+   "employees": 340,
+   "registered": true
+  },
+  {
+   "code": "V-13",
+   "name": "シギノ工業",
+   "kind": "締結部品・機械部品",
+   "region": "近畿",
+   "capital_man_yen": 5000,
+   "employees": 150,
+   "registered": true
+  },
+  {
+   "code": "V-14",
+   "name": "ヨスガ部品",
+   "kind": "締結部品・軸受",
+   "region": "東海",
+   "capital_man_yen": 3000,
+   "employees": 85,
+   "registered": true
+  },
+  {
+   "code": "V-15",
+   "name": "カナデ樹脂",
+   "kind": "樹脂・ゴム部品",
+   "region": "首都圏",
+   "capital_man_yen": 2500,
+   "employees": 70,
+   "registered": true
+  },
+  {
+   "code": "V-16",
+   "name": "ソノエ商事",
+   "kind": "輸入商社",
+   "region": "首都圏",
+   "capital_man_yen": 120000,
+   "employees": 900,
+   "registered": true
+  }
+ ],
+ "tier2": [
+  {
+   "code": "T-01",
+   "name": "カンナギ製鋼",
+   "kind": "鋼板の圧延",
+   "region": "瀬戸内"
+  },
+  {
+   "code": "T-02",
+   "name": "カガリ化工",
+   "kind": "合成ゴム原料",
+   "region": "東海"
+  },
+  {
+   "code": "T-03",
+   "name": "ツグミ化学",
+   "kind": "樹脂原料",
+   "region": "近畿"
+  },
+  {
+   "code": "T-04",
+   "name": "イサナ半導体",
+   "kind": "制御用の半導体",
+   "region": "九州"
+  },
+  {
+   "code": "T-05",
+   "name": "サクヤ金型",
+   "kind": "金型の保守",
+   "region": "東海"
+  }
+ ]
+}

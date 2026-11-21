@@ -1,0 +1,3 @@
+# キットは Python 3.10 以上の標準ライブラリだけで動く (外部の取得・送信なし)。
+# 任意: pytest (python -m pytest)。無ければ python -X utf8 tests/run_tests.py
+# 同梱の記録を作り直すときだけ: claude-agent-sdk (受講者は不要。記録の再生はキー不要)

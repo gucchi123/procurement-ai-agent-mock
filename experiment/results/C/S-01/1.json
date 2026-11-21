@@ -1,0 +1,99 @@
+{
+ "cond": "C",
+ "item": "S-01",
+ "task": "T4",
+ "rep": 1,
+ "provider": "agent-sdk",
+ "model": "claude-opus-5-5",
+ "effort": "high",
+ "prompt_sha": "93abf6155e5eb0e9",
+ "input_chars": 921,
+ "tool_mode": "guarded",
+ "call": {
+  "provider": "agent-sdk",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "model_seen": "claude-opus-5-5",
+  "text": "S-01 の単一調達の品目は 3 つあります。この 3 品目を部品に使う製品は SP-100、BL-200、CP-30 です。\n\n**単一調達の品目と使われている製品**\n\n| 品目 | 一次の調達先(1 社・100%) | 使われている製品 |\n|---|---|---|\n| M-103 樹脂ケース PC-20 | ナズナ化成(V-04) | CP-30 |\n| M-104 小型モーター 0.4kW | ハルセ電子(V-05) | SP-100、BL-200 |\n| M-112 インペラ IM-75 | ツユクサ精密(V-09) | SP-100、CP-30 |\n\n- **判定の根拠:** risk_guide では、単一調達を「一次の調達先が 1 社だけの品目」としています。get_network の資料でこれに当てはまるのは上の 3 品目だけです。ほかの 9 品目は、一次の調達先が 2 社以上あります。\n- **影響:** 手引きのとおり、この 3 社のどれかが止まると、その品目を使う製品がすべて止まります。3 つの製品のうち MS-SET だけは影響を受けません。\n- **答えなかったもの:** 問いは顧客を聞いていないので、customers は空にしました。隠れた単一調達も今回の問いの外なので、答えていません。via には、品目ごとに 1 社だけの一次の調達先を参考として入れました。\n- **action:** 資料から直接わかる結果で、確かめが要る情報源も使っていないため、「報告」としました。\n\n```json\n{\"items\": [\"M-103\", \"M-104\", \"M-112\"], \"via\": {\"M-103\": \"V-04\", \"M-104\": \"V-05\", \"M-112\": \"V-09\"}, \"products\": [\"SP-100\", \"BL-200\", \"CP-30\"], \"customers\": [], \"action\": \"報告\", \"recommendation\": \"単一調達の M-103(ナズナ化成)・M-104(ハルセ電子)・M-112(ツユクサ精密)は、SP-100・BL-200・CP-30 の生産を止めかねないため、2 社目の調達先の候補を探すか安全在庫を持つかを検討するよう、担当者と決裁者に報告することを勧めます。\", \"evidence\": [{\"source\": \"risk_guide\", \"quote\": \"単一調達: 一次の調達先が 1 社だけの品目。調達先が止まると、その品目を使う製品がすべて止まる。\"}, {\"source\": \"get_network\", \"quote\": \"M-103: ナズナ化成(V-04) 100% ← 二次: ツグミ化学(T-03)・サクヤ金型(T-05)\"}, {\"source\": \"get_network\", \"quote\": \"M-104: ハルセ電子(V-05) 100% ← 二次: イサナ半導体(T-04)\"}, {\"source\": \"get_network\", \"quote\": \"M-112: ツユクサ精密(V-09) 100% ← 二次: なし\"}, {\"source\": \"get_network\", \"quote\": \"SP-100 小型ポンプ SP-100: 部品 M-101, M-102, M-104, M-106, M-107, M-110, M-112 / 顧客 K-01, K-02\"}, {\"source\": \"get_network\", \"quote\": \"BL-200 送風機 BL-200: 部品 M-101, M-104, M-105, M-107, M-109, M-110 / 顧客 K-02, K-03\"}, {\"source\": \"get_network\", \"quote\": \"CP-30 薬液ポンプ CP-30: 部品 M-102, M-103, M-109, M-111, M-112 / 顧客 K-01, K-04\"}]}\n```",
+  "trace": [
+   {
+    "tool": "get_network",
+    "input": {
+     "part": "all"
+    },
+    "is_error": false,
+    "out_chars": 2154
+   },
+   {
+    "tool": "get_guide",
+    "input": {
+     "name": "risk_guide"
+    },
+    "is_error": false,
+    "out_chars": 595
+   }
+  ],
+  "turns": 3,
+  "api_equiv_usd": 0.057772800000000006,
+  "usage": {
+   "input_tokens": 4,
+   "output_tokens": 1579,
+   "cache_read_input_tokens": 5746,
+   "cache_creation_input_tokens": 3104
+  },
+  "seconds": 18.08,
+  "error": null,
+  "terminal": "completed"
+ },
+ "parsed": {
+  "items": [
+   "M-103",
+   "M-104",
+   "M-112"
+  ],
+  "via": {
+   "M-103": "V-04",
+   "M-104": "V-05",
+   "M-112": "V-09"
+  },
+  "products": [
+   "SP-100",
+   "BL-200",
+   "CP-30"
+  ],
+  "customers": [],
+  "action": "報告",
+  "recommendation": "単一調達の M-103(ナズナ化成)・M-104(ハルセ電子)・M-112(ツユクサ精密)は、SP-100・BL-200・CP-30 の生産を止めかねないため、2 社目の調達先の候補を探すか安全在庫を持つかを検討するよう、担当者と決裁者に報告することを勧めます。",
+  "evidence": [
+   {
+    "source": "risk_guide",
+    "quote": "単一調達: 一次の調達先が 1 社だけの品目。調達先が止まると、その品目を使う製品がすべて止まる。"
+   },
+   {
+    "source": "get_network",
+    "quote": "M-103: ナズナ化成(V-04) 100% ← 二次: ツグミ化学(T-03)・サクヤ金型(T-05)"
+   },
+   {
+    "source": "get_network",
+    "quote": "M-104: ハルセ電子(V-05) 100% ← 二次: イサナ半導体(T-04)"
+   },
+   {
+    "source": "get_network",
+    "quote": "M-112: ツユクサ精密(V-09) 100% ← 二次: なし"
+   },
+   {
+    "source": "get_network",
+    "quote": "SP-100 小型ポンプ SP-100: 部品 M-101, M-102, M-104, M-106, M-107, M-110, M-112 / 顧客 K-01, K-02"
+   },
+   {
+    "source": "get_network",
+    "quote": "BL-200 送風機 BL-200: 部品 M-101, M-104, M-105, M-107, M-109, M-110 / 顧客 K-02, K-03"
+   },
+   {
+    "source": "get_network",
+    "quote": "CP-30 薬液ポンプ CP-30: 部品 M-102, M-103, M-109, M-111, M-112 / 顧客 K-01, K-04"
+   }
+  ]
+ },
+ "recorded": "2026-11-18T19:47:42"
+}
